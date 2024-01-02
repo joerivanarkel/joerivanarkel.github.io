@@ -1,0 +1,11 @@
+@import './variables/_colors.scss';
+
+a {
+    font-weight: 500;
+    color: $primary-color;
+    text-decoration: inherit;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
