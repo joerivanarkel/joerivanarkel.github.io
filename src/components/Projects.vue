@@ -7,20 +7,48 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
 <template>
     <h1 id="projects">Projects</h1>
 
-    <div class="card">
-        <h2>Project 1</h2>
+    <ProjectCard 
+        title="Portfolio"
+        underTitle="Front-end"
+        date="January 2024"
+    >
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptates voluptatem quod
-            voluptatibus quos doloribus quidem voluptate. Quisquam voluptatum,
-            quibusdam, quia, quae voluptates voluptatem quod voluptatibus quos
-            doloribus quidem voluptate.
+            The portfolio you are currently looking at. It is a Vue 3 application
+            that uses Vite as a bundler. It is deployed on GitHub Pages, using a
+            custom GitHub Action that takes the <code>dist</code> folder and
+            pushes it to the <code>gh-pages</code> branch.
         </p>
-    </div>
+
+        <GithubLink link="https://github.com/joerivanarkel/Portfolio"></GithubLink>
+        <WebsiteLink link="https://joerivanarkel.github.io/"></WebsiteLink>
+    </ProjectCard>
+
+    <ProjectCard 
+        title="Vanarkel.net"
+        underTitle="Front-end"
+        date="December 2023"
+    >
+        <p>
+            Vanarkel.net is a Lit Element application that uses Vite as a
+            bundler. It is deployed on GitHub Pages, using a custom GitHub
+            Action that takes the <code>dist</code> folder and pushes it to the
+            <code>gh-pages</code> branch. In the project, I use SCSS for
+            styling. 
+        </p>
+
+        <p>
+            It is a personal website that I am working on in my free time. It
+            will be used to showcase my projects and to blog about my
+            experiences.
+        </p>
+
+        <WebsiteLink link="https://www.vanarkel.net/"></WebsiteLink>
+    </ProjectCard>
 
     <ProjectCard 
         title="Athena" 
         underTitle="Front-end"
+        date="December 2023"
     >
         <p>
             Athena is a C#/Blazor WASM application, which is a wiki for the
@@ -35,11 +63,11 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
         </p>
         <p>
             It is deployed on GitHub Pages, using a custom GitHub Action that
-            builds the application and deploys it to GitHub Pages.
-
+            takes the <code>wwwroot</code> folder and pushes it to the
+            <code>gh-pages</code> branch.
         </p>
 
-        <GithubLink link=""></GithubLink>
-        <WebsiteLink link=""></WebsiteLink>
+        <GithubLink link="https://github.com/joerivanarkel/Athena"></GithubLink>
+        <WebsiteLink link="https://joerivanarkel.github.io/Athena/"></WebsiteLink>
     </ProjectCard>
 </template>
