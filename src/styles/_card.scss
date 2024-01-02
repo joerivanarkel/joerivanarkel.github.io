@@ -1,3 +1,23 @@
 .card {
-    padding: 2em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    // background-color: $background-color-accent;
+    transition: box-shadow 0.25s, border-color 0.25s;
+    border-color: $light-color;
+
+    &:hover {
+        border-color: $primary-color;
+        box-shadow: 0 0 10px 0 $primary-color;
+    }
+
+    &:focus,
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
 }

@@ -7,7 +7,7 @@
   
     color-scheme: light dark;
     color: $light-color;
-    background-color: $background-color;
+    background: radial-gradient($background-color, $background-color-accent);
   
     font-synthesis: none;
     text-rendering: optimizeLegibility;
