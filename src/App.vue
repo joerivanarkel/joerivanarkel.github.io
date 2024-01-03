@@ -19,11 +19,29 @@ import Projects from './components/Projects.vue'
   display: flex;
 }
 
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+
 .content {
   max-width: 60%;
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+  }
+}
 
 
 </style>
