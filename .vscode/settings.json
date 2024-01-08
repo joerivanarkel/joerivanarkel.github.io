@@ -1,0 +1,7 @@
+{
+    "explorer.fileNesting.patterns": {
+        "package.json": "package-lock.json",
+        "tsconfig.json": "tsconfig.*.json",
+        "*.vue": "${basename}.vue.scss"
+    }
+}

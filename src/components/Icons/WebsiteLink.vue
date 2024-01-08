@@ -16,11 +16,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-img {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
-</style>
+<style lang="scss" scoped src="./WebsiteLink.vue.scss"></style>

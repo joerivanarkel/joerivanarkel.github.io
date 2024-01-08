@@ -15,11 +15,11 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
         <p>
             The portfolio you are currently looking at. It is a Vue 3 application
             that uses Vite as a bundler. It is deployed on GitHub Pages, using a
-            custom GitHub Action that takes the <code>dist</code> folder and
+            GitHub Action that takes the <code>dist</code> folder and
             pushes it to the <code>gh-pages</code> branch.
         </p>
 
-        <GithubLink link="https://github.com/joerivanarkel/Portfolio"></GithubLink>
+        <GithubLink link="https://github.com/joerivanarkel/joerivanarkel.github.io"></GithubLink>
         <WebsiteLink link="https://joerivanarkel.github.io/"></WebsiteLink>
     </ProjectCard>
 

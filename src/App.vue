@@ -14,16 +14,4 @@ import Projects from './components/Projects.vue'
   </div>
 </template>
 
-<style lang="scss">
-.app-container {
-  display: flex;
-}
-
-.content {
-  max-width: 60%;
-  margin: 0 auto;
-}
-
-
-
-</style>
+<style lang="scss" src="./App.vue.scss"></style>

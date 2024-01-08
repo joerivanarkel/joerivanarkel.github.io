@@ -27,20 +27,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/variables/_colors.scss';
-h2 {
-    margin-bottom: 0;
-}
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $primary-color;
-    font-style: italic;
-}
-h4 {
-    margin-top: 0;
-    color: $secondary-color;
-    font-style: italic;
-}
-</style>
+<style lang="scss" scoped src="./ProjectCard.vue.scss"></style>

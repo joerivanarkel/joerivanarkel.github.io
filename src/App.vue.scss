@@ -1,0 +1,10 @@
+.app-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0;
+}
+
+.content {
+    max-width: 60%;
+    margin: 0 auto;
+}
