@@ -70,4 +70,23 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
         <GithubLink link="https://github.com/joerivanarkel/Athena"></GithubLink>
         <WebsiteLink link="https://joerivanarkel.github.io/Athena/"></WebsiteLink>
     </ProjectCard>
+
+    <ProjectCard 
+        title="Piratelang"
+        underTitle="Back-end"
+        date="September 2022"
+    >
+        <p>
+            Pirate is a toy programming language that is written in C# and F#. It is a simple language that was created to learn more about programming languages and interpreters.
+        </p>
+        <p>
+            The lexer and parser are written in F#, while the interpreter is written in C#. The interpreter is a simple tree walker that walks through the AST and executes the code.
+        </p>
+        <p>
+            For VSCode, I have written a syntax highlighter. This is written in TypeScript and is deployed as a VSIX package.
+        </p>
+
+        <GithubLink link="https://github.com/piratelang/pirate"></GithubLink>
+        <GithubLink link="https://github/com/piratelang/vscode"></GithubLink>
+    </ProjectCard>
 </template>

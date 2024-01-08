@@ -1,14 +1,24 @@
-// $background-color: #242424;
-// $background-color-accent: #1a1a1a;
-// $primary-color: #646cff;
-// $secondary-color: #535bf2;
-
-// $light-color: rgba(255, 255, 255, 0.87);
-
-
 $background-color: #141434;
 $background-color-accent: #0a0a1a;
 $primary-color: #90a4c3;
 $secondary-color: #c3a490;
 
 $light-color: rgba(255, 255, 255, 0.87);
+
+@media (prefers-color-scheme: light) {
+    $background-color: #ffffff !global;
+    $background-color-accent: #f9f9f9 !global;
+    $primary-color: #213547 !global;
+    $secondary-color: #747bff !global;
+
+    $light-color: rgba(0, 0, 0, 0.87) !global;
+}
+
+// @if prefers-color-scheme == dark {
+//     $background-color: #141434 !global;
+//     $background-color-accent: #0a0a1a !global;
+//     $primary-color: #90a4c3 !global;
+//     $secondary-color: #c3a490 !global;
+
+//     $light-color: rgba(255, 255, 255, 0.87) !global;
+// }	
