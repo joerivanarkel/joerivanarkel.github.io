@@ -1,0 +1,97 @@
+@import './variables/_colors.scss';
+
+// Animated ripple background circles
+.background-ripples {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.ripple-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: $light-color;
+    animation: ripple 15s infinite ease-in-out;
+    box-shadow: 0px 0px 1px 0px $primary-color;
+}
+
+// Different sizes
+.ripple-small {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+}
+
+.ripple-medium {
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+}
+
+.ripple-large {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+
+.ripple-xlarge {
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+}
+
+.ripple-xxlarge {
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+}
+
+// Different opacity levels
+.ripple-shade1 {
+    opacity: 0.2;
+}
+
+.ripple-shade2 {
+    opacity: 0.5;
+    animation-delay: 3s;
+}
+
+.ripple-shade3 {
+    opacity: 0.7;
+    animation-delay: 6s;
+}
+
+.ripple-shade4 {
+    opacity: 0.8;
+    animation-delay: 9s;
+}
+
+.ripple-shade5 {
+    opacity: 0.9;
+    animation-delay: 12s;
+}
+
+// Ripple animation
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+    }
+    
+    50% {
+        transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(0.8);
+    }
+}

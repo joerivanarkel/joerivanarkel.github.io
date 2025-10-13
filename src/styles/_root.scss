@@ -7,8 +7,7 @@
   
     color-scheme: light dark;
     color: $light-color;
-    background: radial-gradient($background-color, $background-color-accent), var(--topo-pattern);
-    background-attachment: fixed;
+    background: $background-color;
   
     font-synthesis: none;
     text-rendering: optimizeLegibility;
