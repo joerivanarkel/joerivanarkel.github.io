@@ -1,20 +1,22 @@
 // CSS Custom Properties for dynamic theme switching
 :root {
     // Dark mode (default)
-    --background-color: #3399ff;
-    --background-color-accent: #2288ee;
+    --background-color: #1a1a1a;
+    --background-color-accent: #222222;
     --primary-color: #90a4c3;
     --secondary-color: #c3a490;
     --light-color: rgba(255, 255, 255, 0.87);
+    --contour-line-color: rgba(255, 255, 255, 0.05);
 }
 
 // Light mode
 :root[data-theme="light"] {
-    --background-color: #3399ff;
-    --background-color-accent: #2288ee;
+    --background-color: #f5f5f5;
+    --background-color-accent: #e8e8e8;
     --primary-color: #213547;
     --secondary-color: #747bff;
     --light-color: rgba(0, 0, 0, 0.87);
+    --contour-line-color: rgba(0, 0, 0, 0.05);
 }
 
 // SCSS variables for use in other files (referencing CSS custom properties)
