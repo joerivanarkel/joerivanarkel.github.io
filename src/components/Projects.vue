@@ -46,33 +46,7 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
     </ProjectCard>
 
     <ProjectCard 
-        title="Athena" 
-        underTitle="Front-end"
-        date="December 2023"
-    >
-        <p>
-            Athena is a C#/Blazor WASM application, which is a wiki for the
-            fictional world of Athena. It is a personal project that I am
-            working on in my free time.
-        </p>
-        <p>
-            Athena uses SASS for styling. This is useable through Node.js, which
-            has been added tot he project as a dependency. There is an MSBuild
-            task that compiles the SASS files to CSS files, which are then
-            included in the application.
-        </p>
-        <p>
-            It is deployed on GitHub Pages, using a custom GitHub Action that
-            takes the <code>wwwroot</code> folder and pushes it to the
-            <code>gh-pages</code> branch.
-        </p>
-
-        <GithubLink link="https://github.com/joerivanarkel/Athena"></GithubLink>
-        <WebsiteLink link="https://joerivanarkel.github.io/Athena/"></WebsiteLink>
-    </ProjectCard>
-
-    <ProjectCard 
-        title="Piratelang"
+        title="Piratelang 1"
         underTitle="Back-end"
         date="September 2022"
     >
