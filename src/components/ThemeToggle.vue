@@ -67,14 +67,16 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 1px solid rgba(128, 128, 128, 0.3);
     background-color: $background-color-accent;
     color: $light-color;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     
     &:hover {
         border-color: $primary-color;
         transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     }
     
     svg {
