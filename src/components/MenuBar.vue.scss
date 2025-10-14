@@ -1,11 +1,17 @@
 @import '../styles/variables/_colors.scss';
 
 .menu {
-    flex: 2;
+    flex: 0 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 1.5rem;
-    width: 100%;
+    width: 200px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav {
@@ -32,5 +38,44 @@ nav {
                 }
             }
         }
+    }
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    border-top: 1px dashed var(--card-border);
+    padding-top: 1.5rem;
+}
+
+.theme-toggle-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    
+    a {
+        color: var(--muted-color);
+        transition: color 0.15s ease-in-out;
+        display: flex;
+        align-items: center;
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1.5rem;
     }
 }

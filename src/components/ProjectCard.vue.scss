@@ -30,6 +30,8 @@ h4 {
     flex-wrap: wrap;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--card-border);
 }
 
 .links {

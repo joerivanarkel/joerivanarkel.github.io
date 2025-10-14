@@ -2,11 +2,9 @@
 import MenuBar from './components/MenuBar.vue'
 import AboutMe from './components/AboutMe.vue'
 import Projects from './components/Projects.vue'
-import ThemeToggle from './components/ThemeToggle.vue'
 </script>
 
 <template>
-  <ThemeToggle />
   <div class="app-container">
     <MenuBar />
     <div class="content">
