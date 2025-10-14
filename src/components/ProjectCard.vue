@@ -4,6 +4,12 @@
         <h3>{{ underTitle }}</h3>
         <h4>{{ date }}</h4>
         <slot></slot>
+        <div v-if="$slots.badges" class="badges">
+            <slot name="badges"></slot>
+        </div>
+        <div v-if="$slots.links" class="links">
+            <slot name="links"></slot>
+        </div>
     </div>
 </template>
 

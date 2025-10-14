@@ -1,15 +1,40 @@
 @import '../styles/variables/_colors.scss';
+
 h2 {
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
+
 h3 {
     margin-top: 0;
-    margin-bottom: 0;
-    color: $primary-color;
+    margin-bottom: 0.25rem;
+    color: var(--muted-color);
     font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
 }
+
 h4 {
     margin-top: 0;
+    margin-bottom: 1rem;
     color: $secondary-color;
     font-style: italic;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    align-items: center;
 }

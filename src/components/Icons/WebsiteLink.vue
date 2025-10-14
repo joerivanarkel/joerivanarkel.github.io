@@ -22,10 +22,22 @@ export default {
         }
     },
     mounted() {
-        this.prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            this.prefersColorScheme = e.matches ? 'dark' : 'light';
-        });
+        this.updateTheme();
+        // Listen for theme changes
+        window.addEventListener('storage', this.updateTheme);
+        // Also check for data-theme attribute changes
+        const observer = new MutationObserver(this.updateTheme);
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    },
+    methods: {
+        updateTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                this.prefersColorScheme = savedTheme;
+            } else {
+                this.prefersColorScheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+            }
+        }
     },
 
     computed: {

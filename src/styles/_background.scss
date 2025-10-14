@@ -1,38 +1,6 @@
 @import './variables/_colors.scss';
 
-// Topographic contour map background
+// Clean background - no patterns
 body {
     background-color: var(--background-color);
-    background-image: 
-        repeating-radial-gradient(circle at 15% 20%, transparent 0%, transparent 40%, var(--contour-line-color) 41%, transparent 42%),
-        repeating-radial-gradient(circle at 65% 30%, transparent 0%, transparent 35%, var(--contour-line-color) 36%, transparent 37%),
-        repeating-radial-gradient(circle at 30% 70%, transparent 0%, transparent 45%, var(--contour-line-color) 46%, transparent 47%),
-        repeating-radial-gradient(circle at 85% 60%, transparent 0%, transparent 38%, var(--contour-line-color) 39%, transparent 40%),
-        repeating-radial-gradient(circle at 50% 85%, transparent 0%, transparent 42%, var(--contour-line-color) 43%, transparent 44%),
-        repeating-radial-gradient(circle at 10% 55%, transparent 0%, transparent 37%, var(--contour-line-color) 38%, transparent 39%),
-        repeating-radial-gradient(circle at 75% 15%, transparent 0%, transparent 43%, var(--contour-line-color) 44%, transparent 45%),
-        repeating-radial-gradient(circle at 40% 45%, transparent 0%, transparent 36%, var(--contour-line-color) 37%, transparent 38%),
-        repeating-radial-gradient(circle at 90% 85%, transparent 0%, transparent 44%, var(--contour-line-color) 45%, transparent 46%),
-        repeating-radial-gradient(circle at 25% 10%, transparent 0%, transparent 39%, var(--contour-line-color) 40%, transparent 41%),
-        repeating-radial-gradient(circle at 55% 60%, transparent 0%, transparent 41%, var(--contour-line-color) 42%, transparent 43%),
-        repeating-radial-gradient(circle at 80% 40%, transparent 0%, transparent 37%, var(--contour-line-color) 38%, transparent 39%);
-    background-size: 500px 500px, 450px 450px, 480px 480px, 520px 520px, 490px 490px, 460px 460px,
-                     510px 510px, 470px 470px, 530px 530px, 440px 440px, 500px 500px, 485px 485px;
-    background-blend-mode: overlay;
-    animation: drift 60s linear infinite alternate;
-}
-
-@keyframes drift {
-    0% { 
-        background-position: 
-            0px 0px, 100px 50px, 200px 100px, 300px 150px,
-            400px 200px, 50px 250px, 150px 300px, 250px 350px,
-            350px 400px, 450px 450px, 500px 500px, 550px 550px;
-    }
-    100% { 
-        background-position: 
-            200px 100px, 300px 150px, 400px 200px, 500px 250px,
-            600px 300px, 250px 350px, 350px 400px, 450px 450px,
-            550px 500px, 650px 550px, 700px 600px, 750px 650px;
-    }
 }
