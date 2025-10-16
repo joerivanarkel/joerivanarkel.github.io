@@ -1,0 +1,6 @@
+@import './variables/_colors.scss';
+
+// Clean background - no patterns
+body {
+    background-color: var(--background-color);
+}

@@ -1,0 +1,17 @@
+@import '@/styles/variables/_colors.scss';
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    
+    a {
+        color: var(--muted-color);
+        transition: color 0.15s ease-in-out;
+        display: flex;
+        align-items: center;
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

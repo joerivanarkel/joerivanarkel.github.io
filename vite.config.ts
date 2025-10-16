@@ -10,11 +10,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      '@': path.resolve(__dirname, 'src')
     }
   },
   server: {
-    port: 8080,
-    hot: true
+    port: 8080
   },
   plugins: [vue()],
 })

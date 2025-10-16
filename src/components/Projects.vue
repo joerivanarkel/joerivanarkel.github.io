@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import ProjectCard from './ProjectCard.vue'
-import GithubLink from './Icons/GithubLink.vue'
-import WebsiteLink from './Icons/WebsiteLink.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
+import GithubLink from '@/components/Links/GithubLink.vue'
+import WebsiteLink from '@/components/Links/WebsiteLink.vue'
+import Badge from '@/components/UI/Badge.vue'
 </script>
 
 <template>
@@ -19,8 +20,17 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
             pushes it to the <code>gh-pages</code> branch.
         </p>
 
-        <GithubLink link="https://github.com/joerivanarkel/joerivanarkel.github.io"></GithubLink>
-        <WebsiteLink link="https://joerivanarkel.github.io/"></WebsiteLink>
+        <template #badges>
+            <Badge label="Vue 3" color="#42b883" />
+            <Badge label="TypeScript" color="#3178c6" />
+            <Badge label="Vite" color="#646cff" />
+            <Badge label="SCSS" color="#cc6699" />
+        </template>
+
+        <template #links>
+            <GithubLink link="https://github.com/joerivanarkel/joerivanarkel.github.io"></GithubLink>
+            <WebsiteLink link="https://joerivanarkel.github.io/"></WebsiteLink>
+        </template>
     </ProjectCard>
 
     <ProjectCard 
@@ -42,7 +52,38 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
             experiences.
         </p>
 
-        <WebsiteLink link="https://www.vanarkel.net/"></WebsiteLink>
+        <template #badges>
+            <Badge label="Lit" color="#324fff" />
+            <Badge label="TypeScript" color="#3178c6" />
+            <Badge label="Vite" color="#646cff" />
+            <Badge label="SCSS" color="#cc6699" />
+        </template>
+
+        <template #links>
+            <WebsiteLink link="https://www.vanarkel.net/"></WebsiteLink>
+        </template>
+    </ProjectCard>
+
+    <ProjectCard
+        title="Packages"
+        underTitle="NuGet packages & tooling"
+        date="August 2023"
+    >
+        <p>
+            A mono-repo of reusable .NET packages and tooling I maintain. It
+            contains libraries published as NuGet packages used across several
+            of my projects, plus build-time helpers and CI configurations.
+        </p>
+
+        <template #badges>
+            <Badge label=".NET" color="#239120" />
+            <Badge label="C#" color="#239120" />
+            <Badge label="NuGet" color="#7b1fa2" />
+        </template>
+
+        <template #links>
+            <GithubLink link="https://github.com/joerivanarkel/joerivanarkel.Packages"></GithubLink>
+        </template>
     </ProjectCard>
 
     <ProjectCard 
@@ -60,7 +101,15 @@ import WebsiteLink from './Icons/WebsiteLink.vue'
             For VSCode, I have written a syntax highlighter. This is written in TypeScript and is deployed as a VSIX package.
         </p>
 
-        <GithubLink link="https://github.com/piratelang/pirate"></GithubLink>
-        <GithubLink link="https://github/com/piratelang/vscode"></GithubLink>
+        <template #badges>
+            <Badge label="C#" color="#239120" />
+            <Badge label="F#" color="#b845fc" />
+            <Badge label="TypeScript" color="#3178c6" />
+        </template>
+
+        <template #links>
+            <GithubLink link="https://github.com/piratelang/pirate"></GithubLink>
+            <GithubLink link="https://github.com/piratelang/vscode"></GithubLink>
+        </template>
     </ProjectCard>
 </template>

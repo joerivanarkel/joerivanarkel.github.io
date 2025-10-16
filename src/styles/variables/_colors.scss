@@ -1,24 +1,31 @@
-$background-color: #141434;
-$background-color-accent: #0a0a1a;
-$primary-color: #90a4c3;
-$secondary-color: #c3a490;
-
-$light-color: rgba(255, 255, 255, 0.87);
-
-@media (prefers-color-scheme: light) {
-    $background-color: #ffffff !global;
-    $background-color-accent: #f9f9f9 !global;
-    $primary-color: #213547 !global;
-    $secondary-color: #747bff !global;
-
-    $light-color: rgba(0, 0, 0, 0.87) !global;
+// CSS Custom Properties for dynamic theme switching
+:root {
+    // Dark mode (default)
+    --background-color: #0d1117;
+    --background-color-accent: #161b22;
+    --card-background: #161b22;
+    --card-border: #30363d;
+    --primary-color: #90a4c3;
+    --secondary-color: #c3a490;
+    --light-color: rgba(255, 255, 255, 0.87);
+    --muted-color: #8b949e;
 }
 
-// @if prefers-color-scheme == dark {
-//     $background-color: #141434 !global;
-//     $background-color-accent: #0a0a1a !global;
-//     $primary-color: #90a4c3 !global;
-//     $secondary-color: #c3a490 !global;
+// Light mode
+:root[data-theme="light"] {
+    --background-color: #ffffff;
+    --background-color-accent: #f6f8fa;
+    --card-background: #ffffff;
+    --card-border: #d0d7de;
+    --primary-color: #0969da;
+    --secondary-color: #6e7781;
+    --light-color: #1f2328;
+    --muted-color: #656d76;
+}
 
-//     $light-color: rgba(255, 255, 255, 0.87) !global;
-// }	
+// SCSS variables for use in other files (referencing CSS custom properties)
+$background-color: var(--background-color);
+$background-color-accent: var(--background-color-accent);
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$light-color: var(--light-color);	
