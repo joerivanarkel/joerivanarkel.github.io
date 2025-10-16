@@ -64,6 +64,28 @@ import Badge from '@/components/UI/Badge.vue'
         </template>
     </ProjectCard>
 
+    <ProjectCard
+        title="Packages"
+        underTitle="NuGet packages & tooling"
+        date="August 2023"
+    >
+        <p>
+            A mono-repo of reusable .NET packages and tooling I maintain. It
+            contains libraries published as NuGet packages used across several
+            of my projects, plus build-time helpers and CI configurations.
+        </p>
+
+        <template #badges>
+            <Badge label=".NET" color="#239120" />
+            <Badge label="C#" color="#239120" />
+            <Badge label="NuGet" color="#7b1fa2" />
+        </template>
+
+        <template #links>
+            <GithubLink link="https://github.com/joerivanarkel/joerivanarkel.Packages"></GithubLink>
+        </template>
+    </ProjectCard>
+
     <ProjectCard 
         title="Piratelang 1"
         underTitle="Back-end"
