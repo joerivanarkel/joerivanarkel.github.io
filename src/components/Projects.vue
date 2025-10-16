@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import ProjectCard from './ProjectCard.vue'
-import GithubLink from './Icons/GithubLink.vue'
-import WebsiteLink from './Icons/WebsiteLink.vue'
-import Badge from './Badge.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
+import GithubLink from '@/components/Links/GithubLink.vue'
+import WebsiteLink from '@/components/Links/WebsiteLink.vue'
+import Badge from '@/components/UI/Badge.vue'
 </script>
 
 <template>
