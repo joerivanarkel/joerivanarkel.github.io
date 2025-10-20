@@ -3,6 +3,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
 import GithubLink from '@/components/Links/GithubLink.vue'
 import WebsiteLink from '@/components/Links/WebsiteLink.vue'
 import Badge from '@/components/UI/Badge.vue'
+import LanguageBadge from './UI/LanguageBadge.vue'
 </script>
 
 <template>
@@ -21,10 +22,11 @@ import Badge from '@/components/UI/Badge.vue'
         </p>
 
         <template #badges>
-            <Badge label="Vue 3" color="#42b883" />
-            <Badge label="TypeScript" color="#3178c6" />
-            <Badge label="Vite" color="#646cff" />
-            <Badge label="SCSS" color="#cc6699" />
+            <LanguageBadge label="Vue" color="#42b883" />
+            <LanguageBadge label="TypeScript" color="#3178c6" />
+            <LanguageBadge label="SCSS" color="#cc6699" />
+            <Badge label="Vite" />
+            <Badge label="GitHub Pages" />
         </template>
 
         <template #links>
@@ -40,7 +42,7 @@ import Badge from '@/components/UI/Badge.vue'
     >
         <p>
             Vanarkel.net is a Lit Element application that uses Vite as a
-            bundler. It is deployed on GitHub Pages, using a custom GitHub
+            bundler. It is deployed on Azure, using a custom GitHub
             Action that takes the <code>dist</code> folder and pushes it to the
             <code>gh-pages</code> branch. In the project, I use SCSS for
             styling. 
@@ -53,10 +55,11 @@ import Badge from '@/components/UI/Badge.vue'
         </p>
 
         <template #badges>
-            <Badge label="Lit" color="#324fff" />
-            <Badge label="TypeScript" color="#3178c6" />
-            <Badge label="Vite" color="#646cff" />
-            <Badge label="SCSS" color="#cc6699" />
+            <LanguageBadge label="TypeScript" color="#3178c6" />
+            <LanguageBadge label="SCSS" color="#cc6699" />
+            <Badge label="Lit" />
+            <Badge label="Vite" />
+            <Badge label="Azure Static Web Apps" />
         </template>
 
         <template #links>
@@ -76,9 +79,9 @@ import Badge from '@/components/UI/Badge.vue'
         </p>
 
         <template #badges>
-            <Badge label=".NET" color="#239120" />
-            <Badge label="C#" color="#239120" />
-            <Badge label="NuGet" color="#7b1fa2" />
+            <LanguageBadge label="C#" color="#239120" />
+            <Badge label=".NET" />
+            <Badge label="NuGet" />
         </template>
 
         <template #links>
@@ -102,9 +105,9 @@ import Badge from '@/components/UI/Badge.vue'
         </p>
 
         <template #badges>
-            <Badge label="C#" color="#239120" />
-            <Badge label="F#" color="#b845fc" />
-            <Badge label="TypeScript" color="#3178c6" />
+            <LanguageBadge label="C#" color="#239120" />
+            <LanguageBadge label="F#" color="#b845fc" />
+            <LanguageBadge label="TypeScript" color="#3178c6" />
         </template>
 
         <template #links>
@@ -125,13 +128,15 @@ import Badge from '@/components/UI/Badge.vue'
         </p>
 
         <template #badges>
-            <Badge label="C#" color="#239120" />
-            <Badge label="Blazor" color="#512bd4" />
-            <Badge label=".NET" color="#239120" />
+            <LanguageBadge label="C#" color="#239120" />
+            <Badge label="Blazor" />
+            <Badge label=".NET" />
+            <Badge label="GitHub Pages" />
         </template>
 
         <template #links>
             <GithubLink link="https://github.com/joerivanarkel/MineSweeper"></GithubLink>
+            <WebsiteLink link="https://joerivanarkel.github.io/MineSweeper/"></WebsiteLink>
         </template>
     </ProjectCard>
 </template>

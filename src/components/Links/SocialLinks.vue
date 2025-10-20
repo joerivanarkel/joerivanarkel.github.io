@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import GithubIcon from '@/components/Icons/GithubIcon.vue'
 import LinkedinIcon from '@/components/Icons/LinkedinIcon.vue'
+import WakatimeIcon from '@/components/Icons/WakatimeIcon.vue'
 </script>
 
 <template>
@@ -10,6 +11,9 @@ import LinkedinIcon from '@/components/Icons/LinkedinIcon.vue'
         </a>
         <a href="https://www.linkedin.com/in/joerivanarkel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
             <LinkedinIcon width="20" height="20" />
+        </a>
+        <a href="https://wakatime.com/@joerivanarkel" target="_blank" rel="noopener noreferrer" aria-label="WakaTime Profile">
+            <WakatimeIcon width="20" height="20" />
         </a>
     </div>
 </template>
