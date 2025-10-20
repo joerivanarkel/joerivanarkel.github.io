@@ -112,4 +112,26 @@ import Badge from '@/components/UI/Badge.vue'
             <GithubLink link="https://github.com/piratelang/vscode"></GithubLink>
         </template>
     </ProjectCard>
+
+    <ProjectCard 
+        title="MineSweeper"
+        underTitle="Game"
+        date="August 2022"
+    >
+        <p>
+            A classic MineSweeper game implementation built with C# and Blazor. 
+            Features a clean UI, customizable difficulty levels, and timer functionality.
+            This project was created to practice Blazor development and game logic implementation.
+        </p>
+
+        <template #badges>
+            <Badge label="C#" color="#239120" />
+            <Badge label="Blazor" color="#512bd4" />
+            <Badge label=".NET" color="#239120" />
+        </template>
+
+        <template #links>
+            <GithubLink link="https://github.com/joerivanarkel/MineSweeper"></GithubLink>
+        </template>
+    </ProjectCard>
 </template>
