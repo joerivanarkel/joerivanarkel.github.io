@@ -13,13 +13,19 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Portfolio" underTitle="Front-end" :date="meta.date">
+    <ProjectCard title="Portfolio" underTitle="Front-end" :date="meta.date" :images="meta.images">
+        <template #summary>
+            <p>The portfolio you are looking at: a Vue 3 + Vite site on GitHub Pages.</p>
+        </template>
+
+        <template #details>
         <p>
             The portfolio you are currently looking at. It is a Vue 3 application
             that uses Vite as a bundler. It is deployed on GitHub Pages, using a
             GitHub Action that takes the <code>dist</code> folder and
             pushes it to the <code>gh-pages</code> branch.
         </p>
+        </template>
 
         <template #badges>
             <LanguageBadge label="Vue" />

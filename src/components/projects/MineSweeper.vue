@@ -13,12 +13,18 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="MineSweeper" underTitle="Game" :date="meta.date">
+    <ProjectCard title="MineSweeper" underTitle="Game" :date="meta.date" :images="meta.images">
+        <template #summary>
+            <p>Classic MineSweeper built with C# and Blazor.</p>
+        </template>
+
+        <template #details>
         <p>
             A classic MineSweeper game implementation built with C# and Blazor.
             Features a clean UI, customizable difficulty levels, and timer functionality.
             This project was created to practice Blazor development and game logic implementation.
         </p>
+        </template>
 
         <template #badges>
             <LanguageBadge label="C#" />

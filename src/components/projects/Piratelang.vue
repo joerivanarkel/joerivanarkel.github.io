@@ -11,7 +11,12 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Piratelang 1" underTitle="Back-end" :date="meta.date">
+    <ProjectCard title="Piratelang 1" underTitle="Back-end" :date="meta.date" :images="meta.images">
+        <template #summary>
+            <p>A toy programming language in C# and F#, with a VSCode syntax highlighter.</p>
+        </template>
+
+        <template #details>
         <p>
             Pirate is a toy programming language that is written in C# and F#. It is a simple language that was created to learn more about programming languages and interpreters.
         </p>
@@ -21,6 +26,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
         <p>
             For VSCode, I have written a syntax highlighter. This is written in TypeScript and is deployed as a VSIX package.
         </p>
+        </template>
 
         <template #badges>
             <LanguageBadge label="C#" />

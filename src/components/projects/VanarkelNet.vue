@@ -12,7 +12,12 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Vanarkel.net" underTitle="Front-end" :date="meta.date">
+    <ProjectCard title="Vanarkel.net" underTitle="Front-end" :date="meta.date" :images="meta.images">
+        <template #summary>
+            <p>A personal website built with Lit and Vite, hosted on Azure.</p>
+        </template>
+
+        <template #details>
         <p>
             Vanarkel.net is a Lit Element application that uses Vite as a
             bundler. It is deployed on Azure, using a custom GitHub
@@ -26,6 +31,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
             will be used to showcase my projects and to blog about my
             experiences.
         </p>
+        </template>
 
         <template #badges>
             <LanguageBadge label="TypeScript" />

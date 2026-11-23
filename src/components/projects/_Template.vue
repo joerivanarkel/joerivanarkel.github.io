@@ -1,11 +1,22 @@
 <!--
   Copy this file, rename it (without the leading "_"), and fill it in.
   It is picked up and sorted by `meta.date` automatically.
+
+  Slots:
+    #summary  short teaser shown on the card
+    #details  full description shown in the popup (falls back to the default slot)
+    #badges   shown on the card and in the popup
+    #links    shown in the popup
 -->
 <script lang="ts">
 import type { ProjectMeta } from '@/types/project'
+// Optional screenshots: put files in src/assets/projects/<name>/ and import them:
+// import home from '@/assets/projects/<name>/home.png'
 
-export const meta: ProjectMeta = { date: '2024-01' }
+export const meta: ProjectMeta = {
+    date: '2024-01',
+    // images: [{ src: home, alt: 'Home page', caption: 'Optional caption' }],
+}
 </script>
 
 <script setup lang="ts">
@@ -17,8 +28,14 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Title" underTitle="Category" :date="meta.date">
-        <p>Description.</p>
+    <ProjectCard title="Title" underTitle="Category" :date="meta.date" :images="meta.images">
+        <template #summary>
+            <p>One-line teaser.</p>
+        </template>
+
+        <template #details>
+            <p>Longer description.</p>
+        </template>
 
         <template #badges>
             <LanguageBadge label="TypeScript" />
