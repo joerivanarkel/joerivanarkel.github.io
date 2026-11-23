@@ -31,9 +31,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
             <p>
                 <strong>Rendering:</strong> a .NET 9 CLI parses the files and renders each article with Blazor
                 components on the server, with no browser runtime. Each page gets an infobox, an auto-generated
-                table of contents, cross-links and a references section. The styling is a hand-written
-                "Codex Mundi" stylesheet with an EB Garamond serif, a rubric accent colour and a responsive
-                two-column layout.
+                table of contents, cross-links and a references section.
             </p>
             <p>
                 <strong>Obsidian import:</strong> a Python converter takes my existing Obsidian notes and turns them
@@ -50,11 +48,9 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 
         <template #badges>
             <LanguageBadge label="C#" />
-            <LanguageBadge label="Python" />
-            <Badge label=".NET 9" />
+            <Badge label=".NET" />
             <Badge label="Blazor" />
-            <Badge label="Markdig" />
-            <Badge label="YamlDotNet" />
+            <Badge label="SSG" />
             <Badge label="GitHub Actions" />
             <Badge label="GitHub Pages" />
         </template>
