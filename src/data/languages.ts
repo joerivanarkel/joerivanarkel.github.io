@@ -4,4 +4,5 @@ export const languageColors: Record<string, string> = {
     'TypeScript': '#3178c6',
     'SCSS': '#cc6699',
     'Vue': '#42b883',
+    'Python': '#3572a5',
 }
