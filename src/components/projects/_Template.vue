@@ -14,6 +14,7 @@ import type { ProjectMeta } from '@/types/project'
 // import home from '@/assets/projects/<name>/home.png'
 
 export const meta: ProjectMeta = {
+    title: 'Title',
     date: '2024-01',
     // images: [{ src: home, alt: 'Home page', caption: 'Optional caption' }],
 }
@@ -28,7 +29,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Title" underTitle="Category" :date="meta.date" :images="meta.images">
+    <ProjectCard :title="meta.title" underTitle="Category" :date="meta.date" :images="meta.images">
         <template #summary>
             <p>One-line teaser.</p>
         </template>

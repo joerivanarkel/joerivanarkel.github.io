@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { ProjectMeta } from '@/types/project'
 
-export const meta: ProjectMeta = { date: '2023-12' }
+export const meta: ProjectMeta = { title: 'Vanarkel.net', date: '2023-12' }
 </script>
 
 <script setup lang="ts">
@@ -12,7 +12,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Vanarkel.net" underTitle="Front-end" :date="meta.date" :images="meta.images">
+    <ProjectCard :title="meta.title" underTitle="Front-end" :date="meta.date" :images="meta.images">
         <template #summary>
             <p>A personal website built with Lit and Vite, hosted on Azure.</p>
         </template>

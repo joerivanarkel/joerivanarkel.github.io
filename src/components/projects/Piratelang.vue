@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { ProjectMeta } from '@/types/project'
 
-export const meta: ProjectMeta = { date: '2022-09' }
+export const meta: ProjectMeta = { title: 'Piratelang 1', date: '2022-09' }
 </script>
 
 <script setup lang="ts">
@@ -11,7 +11,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="Piratelang 1" underTitle="Back-end" :date="meta.date" :images="meta.images">
+    <ProjectCard :title="meta.title" underTitle="Back-end" :date="meta.date" :images="meta.images">
         <template #summary>
             <p>A toy programming language in C# and F#, with a VSCode syntax highlighter.</p>
         </template>

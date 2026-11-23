@@ -41,6 +41,26 @@ nav {
     }
 }
 
+nav ul.sub-menu {
+    margin: 0.25rem 0 0 0.75rem;
+
+    li {
+        &::before {
+            content: '·';
+        }
+
+        a {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--muted-color);
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
 .menu-footer {
     display: flex;
     justify-content: flex-start;

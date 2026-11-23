@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { ProjectMeta } from '@/types/project'
 
-export const meta: ProjectMeta = { date: '2022-08' }
+export const meta: ProjectMeta = { title: 'MineSweeper', date: '2022-08' }
 </script>
 
 <script setup lang="ts">
@@ -13,7 +13,7 @@ import LanguageBadge from '@/components/UI/LanguageBadge.vue'
 </script>
 
 <template>
-    <ProjectCard title="MineSweeper" underTitle="Game" :date="meta.date" :images="meta.images">
+    <ProjectCard :title="meta.title" underTitle="Game" :date="meta.date" :images="meta.images">
         <template #summary>
             <p>Classic MineSweeper built with C# and Blazor.</p>
         </template>
