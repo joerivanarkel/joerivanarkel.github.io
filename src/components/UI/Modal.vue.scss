@@ -1,0 +1,78 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-panel {
+    position: relative;
+    width: 100%;
+    max-width: 48rem;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    background: var(--card-background);
+    color: var(--light-color);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    padding: 0 0.5rem;
+    border: none;
+    background: transparent;
+    color: var(--muted-color);
+    font-size: 1.75rem;
+    line-height: 1.5;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--light-color);
+    }
+}
+
+.modal-enter-active,
+.modal-leave-active {
+    transition: opacity 0.18s ease;
+
+    .modal-panel {
+        transition: transform 0.18s ease;
+    }
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+
+    .modal-panel {
+        transform: scale(0.96);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modal-enter-active,
+    .modal-leave-active,
+    .modal-enter-active .modal-panel,
+    .modal-leave-active .modal-panel {
+        transition: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-panel {
+        padding: 1.25rem;
+    }
+}

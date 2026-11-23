@@ -1,0 +1,42 @@
+<script lang="ts">
+import type { ProjectMeta } from '@/types/project'
+
+export const meta: ProjectMeta = { title: 'Piratelang 1', date: '2022-09' }
+</script>
+
+<script setup lang="ts">
+import ProjectCard from '@/components/ProjectCard.vue'
+import GithubLink from '@/components/Links/GithubLink.vue'
+import LanguageBadge from '@/components/UI/LanguageBadge.vue'
+</script>
+
+<template>
+    <ProjectCard :title="meta.title" underTitle="Back-end" :date="meta.date" :images="meta.images">
+        <template #summary>
+            <p>A toy programming language in C# and F#, with a VSCode syntax highlighter.</p>
+        </template>
+
+        <template #details>
+        <p>
+            Pirate is a toy programming language that is written in C# and F#. It is a simple language that was created to learn more about programming languages and interpreters.
+        </p>
+        <p>
+            The lexer and parser are written in F#, while the interpreter is written in C#. The interpreter is a simple tree walker that walks through the AST and executes the code.
+        </p>
+        <p>
+            For VSCode, I have written a syntax highlighter. This is written in TypeScript and is deployed as a VSIX package.
+        </p>
+        </template>
+
+        <template #badges>
+            <LanguageBadge label="C#" />
+            <LanguageBadge label="F#" />
+            <LanguageBadge label="TypeScript" />
+        </template>
+
+        <template #links>
+            <GithubLink link="https://github.com/piratelang/pirate" />
+            <GithubLink link="https://github.com/piratelang/vscode" />
+        </template>
+    </ProjectCard>
+</template>

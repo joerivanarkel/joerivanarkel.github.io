@@ -40,3 +40,26 @@ h4 {
     margin-top: 1rem;
     align-items: center;
 }
+
+.project-card {
+    cursor: pointer;
+}
+
+.summary {
+    margin-bottom: 0.5rem;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: $primary-color;
+    font-size: 0.875rem;
+}
+
+.modal-title {
+    margin-right: 2rem;
+}
+
+.details :deep(p) {
+    line-height: 1.6;
+}
